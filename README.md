@@ -5,3 +5,4 @@ This is the sample application for
 by [Michael Hartl](http://michaelhartl.com/).
 
 * [Chapter 3 Mostly static pages](http://ruby.railstutorial.org/chapters/static-pages#top)
+* [Chapter 4 Rails-flavored Ruby](http://ruby.railstutorial.org/chapters/rails-flavored-ruby#top)
