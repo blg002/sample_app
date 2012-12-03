@@ -9,3 +9,4 @@ by [Michael Hartl](http://michaelhartl.com/).
 * [Chapter 5 Filling in the layout](http://ruby.railstutorial.org/chapters/filling-in-the-layout#top)
 * [Chapter 6 Modeling users](http://ruby.railstutorial.org/chapters/modeling-users#top)
 * [Chapter 7 Sign up](http://ruby.railstutorial.org/chapters/sign-up#top)
+* [Chapter 8 Sign in, sign out](http://ruby.railstutorial.org/chapters/sign-in-sign-out#top)
