@@ -26,11 +26,37 @@ describe "Static pages" do
         visit root_path
       end
 
-      it "should render the user's feed" do
-        user.feed.each do |item|
-          page.should have_selector("li##{item.id}", text: item.content)
+      describe "with multiple microposts" do
+        it "should render the user's feed" do
+          user.feed.each do |item|
+            page.should have_selector("li##{item.id}", text: item.content)
+          end
+        end
+
+        it "should properly pluralize micropost count" do
+          page.should have_selector("span.post-count", text: "2 microposts")
         end
       end
+
+      describe "with one micropost" do
+        before { click_link "delete" }
+
+        it "should not pluralize micropost count" do
+          page.should have_selector("span.post-count", text: "1 micropost")
+        end
+      end
+
+    end
+
+    describe "pagination" do
+      let(:user) { FactoryGirl.create(:user) }
+      before do
+        35.times { |n| FactoryGirl.create(:micropost, user: user, content: "Lorem ipsum #{n}") }
+        sign_in user
+        visit root_path
+      end
+
+      it { should have_selector('div.pagination') }
     end
   end
 

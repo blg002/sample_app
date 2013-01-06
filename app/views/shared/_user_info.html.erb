@@ -4,4 +4,4 @@
 
 <span><%= link_to "view my profile", current_user %></span>
 
-<span><%= pluralize(current_user.microposts.count, "micropost") %></span>
+<span class="post-count"><%= pluralize(current_user.microposts.count, "micropost") %></span>
