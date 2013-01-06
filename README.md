@@ -11,3 +11,4 @@ by [Michael Hartl](http://michaelhartl.com/).
 * [Chapter 7 Sign up](http://ruby.railstutorial.org/chapters/sign-up#top)
 * [Chapter 8 Sign in, sign out](http://ruby.railstutorial.org/chapters/sign-in-sign-out#top)
 * [Chapter 9 Updating, showing, and deleting users](http://ruby.railstutorial.org/chapters/updating-showing-and-deleting-users#top)
+* [Chapter 10 User microposts](http://ruby.railstutorial.org/chapters/user-microposts#top)
